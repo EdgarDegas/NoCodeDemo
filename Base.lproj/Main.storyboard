@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3S7-s4-lhU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="pMt-Of-8TB">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="3S7-s4-lhU" customClass="NCPageViewController" customModule="NCDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <outlet property="dataSource" destination="nrs-Sq-Rv8" id="DnW-FN-SyX"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31z-e6-Xmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="nrs-Sq-Rv8" customClass="NCPageViewControllerDataSource" customModule="NCDemo" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="runtimeStoryboardNames" value="First,Second,Third"/>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-220" y="294"/>
+        </scene>
+    </scenes>
+</document>
